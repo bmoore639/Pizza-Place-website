@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+}
+div.container {
+  height: 220vh;
+  width: 80vw;
+  margin: 0 auto;
+  background-color: #fff;
+}
+container {
+}
+nav {
+  background-color: maroon;
+  text-align: center;
+  height: 7vh;
+  overflow: hidden;
+  margin: 0px;
+  padding: 2px;
+  box-shadow: 7px 5px 15px 5px rgba(0, 0, 0, 0.9);
+}
+a {
+  color: white;
+  text-decoration: none;
+  /*   padding: 0px 20px; */
+  margin: 10px;
+  font-size: 3vw;
+  line-height: 7vh;
+}
+a:hover {
+  color: gold;
+}
+form {
+  display: inline-block;
+  position: relative;
+  background-color: beige;
+  border: 2px solid black;
+  width: 48%;
+  margin: 20px;
+  /*  maybe not  */
+  padding: 10px;
+  border-radius: 20px;
+}
+form > aside {
+  float: right;
+  background-color: tan;
+  border: 2px solid black;
+  position: absolute;
+  left: 90%;
+  width: 40%;
+  margin: 20px;
+  margin-bottom: 25px;
+  /*  maybe not  */
+  /*   padding: 30px;
+  border-radius: 20px; */
+}
+select {
+  float: right;
+  width: 50%;
+}
+form > div::after {
+  padding: 0.5rem;
+  content: "";
+  display: table;
+  clear: both;
+  margin: -10px;
+}
+#identity {
+  background-color: maroon;
+  width: 150px;
+  position: absolute;
+  top: -7%;
+  left: 10%;
+}
+
+img#banner-logo {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+input#name-input::placeholder {
+  color: red;
+}
+h1 {
+  padding: 10px;
+  color: maroon;
+  font-size: 2.5rem;
+  font-family: sans-serif, "Arial";
+}
+#body-rest {
+  padding: 20px;
+}
+label {
+  float: left;
+  width: 50%;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+/* form > div{
+  margin: -20;
+  box-sizing: border-box;
+}   */
+input {
+  margin: -20;
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+option {
+}
+
+/* #finding {
+  float: left;
+  width: 50%;
+} */
+
+div#checkbox-wrapper {
+  float: left;
+  width: 10%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+label#checkbox-label {
+  float: right;
+  font-size: 1.4vw;
+  width: 90%;
+  box-sizing: border-box;
+}
+input#checkbox {
+  float: none;
+  box-sizing: border-box;
+}
+#submit-button {
+  position: absolute;
+  top: 109%;
+  left: 60%;
+}
+#dine-out-count {
+  width: 20%;
+}
+#dine-out-time {
+  width: 80%;
+}
+/* footer{
+  background-color: maroon;
+  width: 100%;
+  height:23%;
+}
+
+#footer-little-words > a{
+  font-size: 1.7vw;
+} */
+</style>
+<body>
+    <div class="container">
+  <img id="banner-logo" src="">
+  <nav>
+
+    <a href="#">home</a>
+    <a href="#">menu</a>
+    <a href="#">directions</a>
+    <a href="#">coupons</a>
+    <a href="#">orders</a>
+    <a href="#">catering</a>
+    <a href="#">reviews</a>
+  </nav>
+  <h1>Customer Survey</h1>
+  <div id="body-rest">
+    <p style="font-size: 1.2em">Thank you for taking our customer survey. Your response helps Red Ball Pizza maintain the tradition that has made us the top-rated pizzeria in the metro area. All participants are automatically entered into a monthly drawing to receive a Red Ball Express PizzaFest containing two large pizzas, a 2-liter soda, and a side order of chicken wings. Check your e-mail inbox for contest results.
+    </p>
+    <p style="font-size: 1.2em">Surveys are private and confidential. Red Ball Pizza will not share your contact information with third parties, ever.</p>
+    <br>
+    <p style="font-size: 1.2em">Required values are marked by an asterisk (*)</p>
+
+  </div>
+  <form id="customer-information">
+    <div>
+      <label id="name-label" for="name-input">Name*</label>
+      <input type="text" placeholder="first and last name" id="name-input">
+    </div>
+    <div>
+      <label id="addressLabel" for="street-address">Street Address</label>
+      <input type="text" placeholder="" id="strAddress-input">
+    </div>
+    <div>
+      <label id="cityLabel" for="city-input">City</label>
+      <input type="text" id="city-input">
+    </div>
+    <div>
+      <label id="stateLabel" for="state-input">State</label>
+      <input type="text" id="state-input">
+    </div>
+    <div>
+      <label id="PostalLabel" for="postal-code-input">Postal Code</label>
+      <input type="text" id="postal-code-input">
+    </div>
+    <div>
+      <label id="PhonenumberLabel" for="phone-number-input">Phone Number</label>
+      <input type="text" id="phone-number-input">
+    </div>
+    <div>
+      <label id="E-mailLabel" for="E-mail-input">E-mail</label>
+      <input type="text" id="E-mail-input">
+    </div>
+    <div>
+      <label id="finding">Where did you hear about us?
+        (select all that apply)</label>
+      <select id="referral-source" size="5">
+        <option value=s"internet">Internet</option>
+        <option value="magazine">Magazine</option>
+        <option value="Newspaper">Newspaper</option>
+        <option value="Word of Mouth">Word of Mouth
+        </option>
+        <option value="Others">Other</option>
+      </select>
+    </div>
+    <div>
+      <label id="favorite-dish">What's your favorite dish?</label>
+      <input type="text">
+      <datalist id="dish-list">
+        <option value="" </datalist>
+    </div>
+    <div>
+      <label id="dine-out-time"> How many times do you dine out per month?</label>
+      <input type="number" id="dine-out-count" min="0" value="0">
+    </div>
+    <div>
+      <label for="" id="checkbox-label">Add me to your mailing list for great coupons and specials!</label>
+      <div id="checkbox-wrapper">
+        <input id="checkbox" type="checkbox">
+      </div>
+      <input id="submit-button" type="submit">
+  </form>
+  <p id=identity>Customer Information</p>
+  <!--   <br><button type="button" id="submit-button" onclick="">Submit</button> -->
+</div>
+
+<!-- <footer>
+ 
+  <div id="footer-little-words">
+  <a href="#">home</a>
+  <a href="#">menu</a>
+  <a href="#">directions</a>
+  <a href="#">coupons</a>
+  <a href="#">orders</a>
+  <a href="#">catering</a>
+  <a href="#">reviews</a>
+  <a href="#">home</a>
+  <a href="#">menu</a>
+  <a href="#">directions</a>
+  <a href="#">coupons</a>
+  <a href="#">orders</a>
+  <a href="#">catering</a>
+  <a href="#">reviews</a>
+  </div>
+</footer>
+ -->
+<!-- end container class -->
+
+<!--   <img id="test-image" src="" width=100 height=100> -->
+</body>
+<script>
+    const testImage = document.getElementById("test-image");
+const bannerLogo = document.getElementById("banner-logo");
+const customerInfoForm = document.getElementById("customer-information");
+
+const nameInput = document.getElementById("name-input");
+
+const strAddressInput = document.getElementById("strAddress-input");
+const cityInput = document.getElementById("city-input");
+const stateInput = document.getElementById("state-input");
+const postalCodeInput = document.getElementById("postal-code-input");
+const phoneNumberInput = document.getElementById("phone-number-input");
+const eMailInput = document.getElementById("E-mail-input");
+const refferalSource = document.getElementById("refferal-source");
+
+let hamburgerSrc =
+  "https://drive.google.com/uc?id=1CnkfA7eH9vAEcuHo-eSbTh0QQdnpIcQb";
+let redX = "https://drive.google.com/uc?id=1DhvGl41dsjs4X2VE4skPXMj6tRzDVHOB";
+let greenCheck =
+  "https://drive.google.com/uc?id=1LDcwQ0vWPkphHPOMDOzOZ8ei3P5hEunv";
+let bannerSrc =
+  "https://drive.google.com/uc?id=1XVrJasLndnCWu2aB1AbxBrHP4CxtZ7YP";
+let checkerBoard =
+  "https://drive.google.com/uc?id=1xTkMkhjX350bTk1q0hZXm6RwQKKK0j4T";
+
+document.body.style.backgroundImage = `url(${checkerBoard})`;
+// testImage.src = redX;
+bannerLogo.src = bannerSrc;
+
+customerInfoForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+});
+
+</script>
+</html>
